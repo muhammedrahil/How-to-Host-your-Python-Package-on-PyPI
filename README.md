@@ -45,3 +45,14 @@ setup(
     python_requires='>=3.6',
 )
 ```
+
+
+
+## Step 2: Build the Package
+
+Run the following commands to build your package:
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
