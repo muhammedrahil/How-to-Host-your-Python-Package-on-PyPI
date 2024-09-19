@@ -1,2 +1,12 @@
-# How-to-Host-your-Python-Package-on-PyPI
-How to Host your Python Package on PyPI. PyPI is the official Python Packages Index. Once you publish it on PyPI, then it can be downloaded via a simple command pip install &lt;package>. Life becomes simpler with this one line.
+
+# Hosting Your Python Package on PyPI
+
+This guide will help you host your Python package on PyPI, the official Python Package Index.
+
+## Prerequisites
+
+Before you begin, ensure you have the following tools installed:
+- Python (>=3.6)
+- pip (Python package installer)
+- twine
+- wheel
