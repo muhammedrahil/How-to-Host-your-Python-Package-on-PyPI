@@ -10,3 +10,10 @@ Before you begin, ensure you have the following tools installed:
 - pip (Python package installer)
 - twine
 - wheel
+
+To install necessary tools, run:
+
+```bash
+pip install wheel
+pip install twine
+```
