@@ -46,8 +46,6 @@ setup(
 )
 ```
 
-
-
 ## Step 2: Build the Package
 
 Run the following commands to build your package:
@@ -56,3 +54,38 @@ Run the following commands to build your package:
 python setup.py sdist bdist_wheel
 ```
 
+This will create the necessary distribution files in the `dist/` folder.
+
+## Step 3: Upload to PyPI
+
+To upload the package, use `twine`. First, remove any previous build files to avoid confusion:
+
+```bash
+Remove-Item -Recurse -Force -Path .\build, .\dist, .\*.egg-info
+```
+
+Then, upload the new build to PyPI:
+
+```bash
+twine upload dist/*
+```
+
+If you need to upload to the official PyPI server, use:
+
+```bash
+twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
+
+## Step 4: Install the Package
+
+After successfully uploading the package, you can install it using pip:
+
+```bash
+pip install your_package_name
+```
+
+Replace `your_package_name` with the name of your package.
+
+## Conclusion
+
+That's it! Your Python package is now available on PyPI for others to download and use.
